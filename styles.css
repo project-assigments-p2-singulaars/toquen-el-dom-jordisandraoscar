@@ -1,0 +1,53 @@
+@font-face {
+    font-family: sfPro;
+    src: url(sources/sfPro.OTF);
+}
+*{
+    font-family: sfPro;
+}
+
+#footerImg{
+    width: 100vw;
+}
+
+#footerSect{
+    background-color: black; 
+    margin-right: -1vw;
+}
+
+.iconsFooter{
+    width: 5vw;
+    height: 10vh;
+    margin-left: 1vw;
+}
+#footerBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footerBar ul{
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+
+#footerBar li{
+    display: inline;
+    margin-right: 2vw;
+}
+
+#footerBar a{
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+#footerSect hr{
+    margin-top: 10vh;
+    color: white;
+    border-top: 0.5vh solid;
+    padding-bottom: 10vh;
+}
+
