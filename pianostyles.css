@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.logo {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pianoKeys {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(22, 22, 22);
+    width: 70vw;
+    padding: 60px 10px 10px 10px;
+    border-radius: 15px;
+  }
+  
+  .keyWhite, .keyBlack {
+    border: 1px solid black;
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .keyWhite {
+    background-color: white;
+    width: 5vw;
+    height: 30vh;
+  }
+  
+  .keyBlack {
+    background-color: black;
+    width: 3vw;
+    height: 18vh;
+    margin-left: -1.5vw;
+    margin-right: -1.5vw;
+    z-index: 1;
+    box-shadow: 0px 4px rgba(68, 68, 68, 0.808);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .left p{
+    margin-bottom: 2px;
+  } 
+
+  .right p{
+    margin-bottom: 2px;
+  } 
+
+  footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
