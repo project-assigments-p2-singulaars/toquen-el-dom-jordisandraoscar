@@ -5,50 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Piano</title>
     <link rel="stylesheet" href="pianostyles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
         <a href="">
-            <img class="logo" src="Group 1toquenLogo.png" alt="logo">
+            <img class="logo" src="img/Group 1toquenLogo.png" alt="logo">
         </a>
     </div>
     <div id="pianoKeys">
-        <div class="keyWhite" data-note="C"></div>
-        <div class="keyBlack" data-note="C#"></div>
-        <div class="keyWhite" data-note="D"></div>
-        <div class="keyBlack" data-note="D#"></div>
-        <div class="keyWhite" data-note="E"></div>
-        <div class="keyWhite" data-note="F"></div>
-        <div class="keyBlack" data-note="F#"></div>
-        <div class="keyWhite" data-note="G"></div>
-        <div class="keyBlack" data-note="G#"></div>
-        <div class="keyWhite" data-note="A"></div>
-        <div class="keyBlack" data-note="A#"></div>
-        <div class="keyWhite" data-note="B"></div>
-        <div class="keyWhite" data-note="C"></div>
-        <div class="keyBlack" data-note="C#"></div>
-        <div class="keyWhite" data-note="D"></div>
-        <div class="keyBlack" data-note="D#"></div>
-        <div class="keyWhite" data-note="E"></div>
-        <div class="keyWhite" data-note="F"></div>
-        <div class="keyBlack" data-note="F#"></div>
-        <div class="keyWhite" data-note="G"></div>
-        <div class="keyBlack" data-note="G#"></div>
-        <div class="keyWhite" data-note="A"></div>
-        <div class="keyBlack" data-note="A#"></div>
-        <div class="keyWhite" data-note="B"></div>
+        <div class="key White" data-note="C"><span>C</span></div>
+        <div class="key Black" data-note="C#"><span>C#</span></div>
+        <div class="key White" data-note="D"><span>D</span></div>
+        <div class="key Black" data-note="D#"><span>D#</span></div>
+        <div class="key White" data-note="E"><span>E</span></div>
+        <div class="key White" data-note="F"><span>F</span></div>
+        <div class="key Black" data-note="F#"><span>F#</span></div>
+        <div class="key White" data-note="G"><span>G</span></div>
+        <div class="key Black" data-note="G#"><span>G#</span></div>
+        <div class="key White" data-note="A"><span>A</span></div>
+        <div class="key Black" data-note="A#"><span>A#</span></div>
+        <div class="key White" data-note="B"><span>B</span></div>
+        <div class="key White" data-note="C2"><span>C</span></div>
+        <div class="key Black" data-note="C#2"><span>C#</span></div>
+        <div class="key White" data-note="D2"><span>D</span></div>
+        <div class="key Black" data-note="D#2"><span>D#</span></div>
+        <div class="key White" data-note="E2"><span>E</span></div>
+        <div class="key White" data-note="F2"><span>F</span></div>
+        <div class="key Black" data-note="F#2"><span>F#</span></div>
+        <div class="key White" data-note="G2"><span>G</span></div>
+        <div class="key Black" data-note="G#2"><span>G#</span></div>
+        <div class="key White" data-note="A2"><span>A</span></div>
+        <div class="key Black" data-note="A#2"><span>A#</span></div>
+        <div class="key White" data-note="B2"><span>B</span></div>
     </div>
+
+    <audio id="C" src="notes/C.mp3"></audio>
+    <audio id="C#" src="notes/Db.mp3"></audio>
+    <audio id="D" src="notes/D.mp3"></audio>
+    <audio id="D#" src="notes/Eb.mp3"></audio>
+    <audio id="E" src="notes/E.mp3"></audio>
+    <audio id="F" src="notes/F.mp3"></audio>
+    <audio id="F#" src="notes/Gb.mp3"></audio>
+    <audio id="G" src="notes/G.mp3"></audio>
+    <audio id="G#" src="notes/Ab.mp3"></audio>
+    <audio id="A" src="notes/A.mp3"></audio>
+    <audio id="A#" src="notes/Bb.mp3"></audio>
+    <audio id="B" src="notes/B.mp3"></audio>
     <footer>
         <a href="">
             <div class="left">
                 <p>Nuestros instrumentos</p>
-                <img class="leftArrow" src="flechaIzquierda.png">
+                <img class="leftArrow" src="img/flechaIzquierda.png">
             </div>
         </a>
         <a href="">
             <div class="right">
                 <p>Ir al curso de piano</p>
-                <img class="rightArrow" src="flechaDerecha.png">
+                <img class="rightArrow" src="img/flechaDerecha.png">
             </div>
         </a>
     </footer>
