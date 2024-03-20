@@ -20,6 +20,11 @@
     height: 10vh;
     margin-left: 1vw;
 }
+.iconsFooter:hover{
+    filter: invert(0.5);
+    -webkit-filter: invert(0.5);
+    
+}
 #footerBar{
     display: flex;
     justify-content: space-between;
@@ -44,10 +49,34 @@
     text-decoration: none;
 }
 
+#footerBar a:hover{
+    -webkit-filter: invert(0.5);
+}
 #footerSect hr{
-    margin-top: 10vh;
     color: white;
-    border-top: 0.5vh solid;
-    padding-bottom: 10vh;
+    border: none;
+    height: 4px;
+    background-color: white;
+
 }
 
+#footerFinal{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+#footerFinal img{
+    margin-bottom: 10vw;
+    width: 30vw;
+    height: 15vh;
+}
+#footerFinal h2{
+    margin-top: -1.5vh;
+}
+#phoneNumber{
+    padding-top: 40px;
+}
