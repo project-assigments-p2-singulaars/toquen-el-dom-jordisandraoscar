@@ -2,51 +2,97 @@
     font-family: sfPro;
     src: url(sources/sfPro.OTF);
 }
+@font-face {
+    font-family: sfProLight;
+    src: url(sources/sfProLight.OTF);
+}
 *{
     font-family: sfPro;
 }
-
-#footerImg{
-    width: 100vw;
+#ourInstruments{
+    background-color: white;
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    
 }
 
-#footerSect{
-    background-color: black; 
-    margin-right: -1vw;
+#ourInstruments h2{
+    color: brown;
+    font-size: 8rem;
+    margin-bottom: 0;
+    margin-top: -2vh;
+    letter-spacing: 1vw;
+    font-family: sfProLight;
 }
 
-.iconsFooter{
-    width: 5vw;
-    height: 10vh;
-    margin-left: 1vw;
+#upperH2
+{
+    margin-left: 19vw;
 }
+
 .iconsFooter:hover{
     filter: invert(0.5);
     -webkit-filter: invert(0.5);
     
 }
 #footerBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ display: flex;
+    flex-direction: column;
 }
 
-#footerBar ul{
-    list-style-type: none; /* Elimina los puntos de la lista */
-    margin: 0;
-    padding: 0;
+.instrumentsCards{
+    margin-top: 7vh;
+    background-color: brown;
+    margin-left: 2vw;
+
+   
 }
 
-
-#footerBar li{
-    display: inline;
-    margin-right: 2vw;
-}
-
-#footerBar a{
+.cardText{
     color: white;
-    font-size: 2.5rem;
-    text-decoration: none;
+    font-size: 3rem;
+    letter-spacing: 0.3vw;
+    align-self: center;
+    padding-bottom: 1vw;
+}
+
+.instrumentsCards img{
+    padding: 3vw;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    width: 23vw;
+    height: 25vh;
+    object-fit: cover;
+    
+}
+.sliderCards{
+    display: flex;
+}
+
+#lessonsDiv{
+    background-color: black;
+    width: 99vw;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+
+}
+#lessonsDiv h2{
+    color: white;
+    font-size: 2rem;
+}
+
+#lessonsDiv img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20vw;
+    margin-bottom: -1.7vh;
 }
 
 #footerBar a:hover{
@@ -80,3 +126,33 @@
 #phoneNumber{
     padding-top: 40px;
 }
+
+#lessonsDiv a{
+    text-decoration: none;
+}
+#lessonsDiv a:hover{
+    filter: invert(0.5);
+    -webkit-filter: invert(0.5);
+}
+#lessonsList{
+    margin-left: 30vw;
+    margin-top: 10vh;
+}
+
+.h2Spacing{
+    margin-bottom: 10vh;
+}
+
+#verticalText{
+    position: absolute;
+    left: 0;
+    top: 90%;
+    transform: translate(0%, -50%) rotate(-90deg); 
+    transform-origin: left top; 
+    white-space: nowrap; 
+    font-size: 20rem;
+    color: brown;
+
+
+}
+
