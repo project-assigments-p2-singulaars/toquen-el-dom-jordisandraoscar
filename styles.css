@@ -2,9 +2,143 @@
     font-family: sfPro;
     src: url(sources/sfPro.OTF);
 }
-*{
+
+* {
+    margin: 0;
+    padding: 0;
     font-family: sfPro;
 }
+
+body{
+width: 100vw;
+height: auto;
+}
+
+
+header {
+    padding: 1.5vw 1.5vh;
+    background-image: url('img/pianolandingpage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 16vw auto;
+    background-color: #b22525a9;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+}
+
+.navBar {
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.361);
+    padding: 2vw 1.5vh;
+    border-radius: 85px;
+    right: 0;
+    top: 9vh;
+    position: fixed;
+}
+
+.navBar li {
+    display: inline-block;
+    margin-right: 1.5vw;
+}
+
+.navBar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navBar li a:hover {
+    text-decoration: underline;
+}
+
+
+.escuelaTitle{
+    width: 45vw;
+    font-size: 3rem;
+    margin-left: 52vw;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.red{
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+.red img{
+    width: 100vw;
+    height: 90vh;
+    display: block;
+}
+
+.escuelaText{
+    color: black;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -18%);
+    text-align: center;
+}
+
+.whiteSpace{
+    display: flex;
+    justify-content: center;
+}
+
+.whiteSpace img{
+    height: 70vh;
+}
+
+.ofertas{
+    background-color:#ffffff;
+    width: 100vw;
+    height: 75vh;
+    position: relative;
+}
+
+.ofertas img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button{
+    width: 30vw;
+    background-color:#000000;
+    border: 4px #000000 solid;
+    border-radius: 25px;
+    padding: 1vw 1vh;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.buttons p{
+    margin-bottom: 6vh;
 
 #footerImg{
     width: 100vw;
@@ -81,17 +215,6 @@
     padding-top: 40px;
 }
 
-@font-face {
-    font-family: sfPro;
-    src: url(sources/sfPro.OTF);
-}
-@font-face {
-    font-family: sfProLight;
-    src: url(sources/sfProLight.OTF);
-}
-*{
-    font-family: sfPro;
-}
 #ourInstruments{
     background-color: white;
     width: 98vw;
@@ -193,6 +316,4 @@
     white-space: nowrap; 
     font-size: 20rem;
     color: brown;
-
-
 }
