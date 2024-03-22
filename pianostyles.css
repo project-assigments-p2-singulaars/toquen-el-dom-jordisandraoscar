@@ -1,3 +1,11 @@
+@font-face {
+  font-family: sfPro;
+  src: url(sources/sfPro.OTF);
+}
+
+* {
+  font-family: sfPro;
+}
 body {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -76,14 +84,71 @@ body {
 
   .left p{
     margin-bottom: 2px;
+    margin-top: -2vh;
   } 
 
   .right p{
     margin-bottom: 2px;
+    margin-top: -2vh;
   }
 
   footer a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
+  }
+
+  .key.pressed {
+    /* Estilos para cuando la tecla está pulsada */
+    /* Por ejemplo, puedes cambiar el color de fondo o aplicar una sombra */
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.808);
+  }
+  
+  .key:active {
+    /* Estilos para cuando la tecla está activa */
+    /* Por ejemplo, puedes cambiar el color de fondo o aplicar una sombra */
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.808);
+  }
+  *{
+    user-select: none;
+  }
+  #hideButton{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -5vh;
+            margin-top: -10vh;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 13px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #960303;
+  }
+  .button1:hover {
+    background-color: #960303;
+    color: white;
+  }
+ 
+  .arrows{
+    margin-top: 2vh;
+    width: auto;
+    height: auto;
+
+  }
+  .arrows:hover{
+    filter: invert(.3);
   }
