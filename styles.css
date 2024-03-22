@@ -10,17 +10,24 @@
 }
 
 body{
-width: 100vw;
-height: auto;
+    width: 100vw;
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-
-header {
-    padding: 1.5vw 1.5vh;
-    background-image: url('img/pianolandingpage.jpg');
+header{
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+#background-video{
+width: 100vw;
+height: 100vh;
+height: auto;
+margin: 0;
+padding: 0; 
 }
 
 .headerContainer {
@@ -35,6 +42,8 @@ header {
     border-radius: 50%;
     position: fixed;
     z-index: 100;
+    margin-top: 2vh;
+    margin-left: 2vh;
 }
 
 .navBar {
@@ -43,13 +52,16 @@ header {
     padding: 2vw 1.5vh;
     border-radius: 85px;
     right: 0;
-    top: 9vh;
+    top: 6vh;
     position: fixed;
+    z-index: 100;
+    margin-right: 1vw;
 }
 
 .navBar li {
     display: inline-block;
-    margin-right: 1.5vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 
 .navBar li a {
@@ -61,13 +73,12 @@ header {
     text-decoration: underline;
 }
 
-
 .escuelaTitle{
-    width: 45vw;
-    font-size: 3rem;
-    margin-left: 52vw;
-    margin-top: 20vh;
-    text-align: center;
+    width: 55vw;
+    font-size: 4rem;
+    margin-left: 40vw;
+    margin-top: 40vh;
+    text-align: end;
 }
 
 .red{
@@ -84,7 +95,7 @@ header {
 
 .escuelaText{
     color: black;
-    width: 60vw;
+    width: 55vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -93,6 +104,16 @@ header {
     left: 50%;
     transform: translate(-20%, -18%);
     text-align: center;
+}
+
+.escuelaText p{
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+.escuelaText .firstline{
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .whiteSpace{
@@ -140,79 +161,64 @@ button{
 .buttons p{
     margin-bottom: 6vh;}
 
-#footerImg{
-    width: 100vw;
+.buttonPianoVirtual:hover{
+    cursor:pointer;
 }
 
-#footerSect{
-    background-color: black; 
-    margin-right: -1vw;
+
+.blackSpace{
+    height: 35vh;
+    background-color: black;
 }
 
-.iconsFooter{
-    width: 5vw;
-    height: 10vh;
-    margin-left: 1vw;
-}
-.iconsFooter:hover{
-    filter: invert(0.5);
-    -webkit-filter: invert(0.5);
-    
-}
-#footerBar{
+#lessonsDiv{
+    background-color: black;
+    width: 99vw;
+    height: 99vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
-#footerBar ul{
-    list-style-type: none; /* Elimina los puntos de la lista */
-    margin: 0;
-    padding: 0;
-}
-
-
-#footerBar li{
-    display: inline;
-    margin-right: 2vw;
-}
-
-#footerBar a{
+#lessonsDiv h2{
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+#lessonsDiv img{
+height: 60vh;
+width: auto;
+}
+
+.guitarGuy{
+    display: flex;
+    align-items: end;
+}
+
+#lessonsDiv a{
     text-decoration: none;
 }
 
-#footerBar a:hover{
+#lessonsDiv a:hover{
+    filter: invert(0.5);
     -webkit-filter: invert(0.5);
 }
-#footerSect hr{
-    color: white;
-    border: none;
-    height: 4px;
-    background-color: white;
 
+#lessonsList{
+    margin-left: -33vw;
+    margin-top: 10vh;
 }
 
-#footerFinal{
-    margin-top: 5vw;
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-    flex-direction: column;
-    align-items: center;
+.h2Spacing{
+    margin-bottom: 10vh;
 }
-#footerFinal img{
-    margin-bottom: 10vw;
-    width: 30vw;
-    height: 15vh;
-}
-#footerFinal h2{
-    margin-top: -1.5vh;
-}
-#phoneNumber{
-    padding-top: 40px;
+
+#verticalText{
+    transform:  rotate(-90deg); 
+    margin-left: -20vw;
+    margin-top: 13vh;
+    font-size: 15rem;
+    color:#b22525;
 }
 
 #ourInstruments{
@@ -222,26 +228,81 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center ;
+}
 
+.h2Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    width: 99vw;
+    margin-top: 15vh;
+    padding-right: 6vw;
 }
 
 #ourInstruments h2{
-    color: brown;
-    font-size: 8rem;
-    margin-bottom: 0;
-    margin-top: -2vh;
-    letter-spacing: 1vw;
-    font-family: sfProLight;
+    color:#b22525;
+    font-family: sfPro;
 }
 
-#upperH2
-{
+#lowerH2{
+    font-size: 6rem;
+}
+
+#upperH2{
+    font-size: 4rem;
     margin-left: 19vw;
+}
+
+.sliderCards {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.sliderCards div {
+    border: 10px solid #fff;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.instrumentsCards {
+    position: relative;
+    /* margin: 20px; */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.sliderCards:hover .instrumentsCards {
+    transform: scale(0.7);
+}
+
+.sliderCards .instrumentsCards:hover {
+    transform: scale(1.2);
+}
+
+.instrumentsCards:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+    background: transparent;
+}
+
+.sliderCards:hover .instrumentsCards:before {
+    background-color: #544f4fcb;
+    background-size:10px 10px;
+}
+
+.sliderCards .instrumentsCards:hover:before {
+    display: none;
 }
 
 .instrumentsCards{
     margin-top: 7vh;
-    background-color: brown;
+    background-color:#b22525;
     margin-left: 2vw;
     display: flex;
     flex-direction: column;
@@ -249,8 +310,7 @@ button{
 
 .cardText{
     color: white;
-    font-size: 3rem;
-    letter-spacing: 0.3vw;
+    font-size: 2rem;
     align-self: center;
     padding-bottom: 1vw;
 }
@@ -262,58 +322,285 @@ button{
     width: 23vw;
     height: 25vh;
     object-fit: cover;
-
+    filter: grayscale(100%);
 }
+
 .sliderCards{
     display: flex;
 }
 
-#lessonsDiv{
-    background-color: black;
-    width: 99vw;
-    height: 99vh;
+.signupForm {
+    max-width: 70vw;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-
-
-}
-#lessonsDiv h2{
-    color: white;
-    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-#lessonsDiv img{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 20vw;
-    margin-bottom: -1.7vh;
+.signupForm input[type="email"] {
+    width: 50%;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    box-sizing: border-box;
+    margin-top: 2vh;
 }
 
-#lessonsDiv a{
-    text-decoration: none;
+.signupForm input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color:#b22525;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
-#lessonsDiv a:hover{
+
+.signupForm input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+#footerImg{
+    width: 80vw;
+    height: 15vh;
+}
+
+.sponsors{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#footerSect{
+    background-color: black; 
+    margin-top: 50vh;
+}
+
+.iconsFooter{
+    width: 3vw;
+    height: 6vh;
+    margin-left: 3vw;
+}
+
+.iconsFooter:hover{
     filter: invert(0.5);
     -webkit-filter: invert(0.5);
 }
-#lessonsList{
-    margin-left: 30vw;
-    margin-top: 10vh;
+
+#footerBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
 }
 
-.h2Spacing{
-    margin-bottom: 10vh;
+#footerBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footerBar li{
+    display: inline;
+    margin-right: 3vw;
+}
+
+#footerBar a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#footerBar a:hover{
+    -webkit-filter: invert(0.5);
+}
+
+#footerSect hr{
+    color: white;
+    border: none;
+    height: 4px;
+    background-color: white;
+    margin-top: 3vh;
+}
+
+#footerFinal{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footerFinal img{
+    margin-bottom: 5vw;
+    width: 20vw;
+    height: 10vh;
+}
+
+#footerFinal h2{
+    font-size: 1rem;
+}
+
+#phoneNumber{
+    padding: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+
+.logo{
+    display: none;
+}
+
+.navBar.active {
+    display: block;
+}
+
+.navBar ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.navBar ul li {
+    margin-bottom: 10px;
+}
+
+.escuelaTitle{
+    width: 100vw;
+    font-size: 3rem;
+    margin-left: 0vw;
+    margin-top: -40vh;
+    text-align: center;
+}
+
+
+.red img{
+    display: none;
+}
+
+.red{
+    width: 100vw;
+    height: 100vh;
+    background-color: #b22525;
+}
+
+.escuelaText{
+    color: black;
+    width: 60vh;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    top:20%;
+    left:35%;
+}
+
+.ofertas img{
+    display: none;
+}
+
+.ofertas{
+    background-color: #b22525;
+}
+
+.buttons p{
+    text-align: center;
+}
+
+.blackSpace{
+    display: none;
+}
+
+#lessonsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #verticalText{
-    position: absolute;
-    left: 0;
-    top: 90%;
-    transform: translate(0%, -50%) rotate(-90deg); 
-    transform-origin: left top; 
-    white-space: nowrap; 
-    font-size: 20rem;
-    color: brown;
+    transform: none;
+    font-size: 1rem;
+    margin-left: 0vw;
+    margin-top: 0vh;
+    font-size: 8rem;
+}
+
+.guitarGuy{
+    display: none;
+}
+
+#lessonsList{
+        margin-left: -30vw;
+        margin-top: 0vh;
+    }
+
+#lessonsDiv h2{
+    font-size: -2rem;
+}
+
+.h2Spacing{
+    margin-bottom: 0vh;
+}
+
+.h2Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin-top: 15vh;
+    padding-right: 0vw;
+}
+
+#lowerH2{
+    font-size: 4rem;
+}
+
+#upperH2{
+    font-size: 3rem;
+    margin-left: 19vw;
+}
+
+.sliderCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.instrumentsCards {
+    margin: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    align-items: center;
+}
+
+.signupForm{
+    margin-top: 0vh;
+}
+
+.sponsors{
+    display: none;
+}
+#footerSect{
+    margin-top: 120vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#footerBar{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconsFooter{
+    width: 6vw;
+}
+
+#footerFinal img{
+    width: 40vw;
+    height: 10vh;
+}
 }

@@ -14,16 +14,15 @@
                 <ul>
                 <li><a href="#inicio">INICIO</a></li>
                 <li><a href="#escuela">ESCUELA</a></li>
-                <li><a href="#">CURSOS</a></li>
-                <li><a href="#">INSTRUMENTOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#lessonsDiv">CURSOS</a></li>
+                <li><a href="#ourInstruments">INSTRUMENTOS</a></li>
+                <li><a href="#footerBar">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
+        <section class="videoPage"><video src="img/videolandingpage.mp4" autoplay muted loop id="background-video"></video>
+        </section>
     </header>
-    <section class="videoPage">
-    </section>
-
     <main>
         <section id="escuela">
             <div class="escuelaTitle">
@@ -32,9 +31,9 @@
             <div class="red">
                 <img src="img/redframe.png" alt="">
                 <div class="escuelaText">
-                    <p>En nuestra escuela, el aprendizaje musical se adapta a tu estilo de vida, permitiéndote estudiar desde la comodidad de tu hogar y sin restricciones de horarios.</p><br>
-                    <p>A diferencia de las escuelas tradicionales con horarios fijos, en <b>Toquen el DOM</b> tú tienes el control total de tu aprendizaje. Nuestro innovador enfoque en la enseñanza virtual te brinda la libertad de avanzar a tu propio ritmo, adaptando las lecciones a tus necesidades y disponibilidad.</p><br>
-                    <p>Con nuestros cursos de calidad y una amplia variedad de instrumentos virtuales, podrás explorar tu pasión por la música de manera interactiva y enriquecedora. Desde piano hasta guitarra, batería o incluso producción musical, tenemos todo lo que necesitas para desarrollar tus habilidades musicales desde cualquier lugar y en cualquier momento.</p><br>
+                    <p><b>En nuestra escuela,</b> el aprendizaje musical se adapta a tu estilo de vida, permitiéndote estudiar desde la comodidad de tu hogar y sin restricciones de horarios.</p><br>
+                    <p>A diferencia de las escuelas tradicionales con horarios fijos, en <b>Toquen el DOM</b> tú tienes el control total de tu aprendizaje. </p><br>
+                    <p>Con nuestros cursos e instrumentos virtuales, podrás explorar tu pasión por la música de manera interactiva y enriquecedora. Tenemos todo lo que necesitas para desarrollar tus habilidades musicales desde cualquier lugar y en cualquier momento.</p><br>
                     <p>En la Escuela Virtual de Música <b>Toquen el DOM</b>, ¡la melodía de tu aprendizaje nunca se detiene!</p><br>
                 </div>
             </div>
@@ -42,22 +41,22 @@
                 <img src="img/arrow.png" alt="">
             </div>
         </section>
-
         <section id="ofertas">
             <div class="ofertas">
-                <a href=""><img src="img/blackwhiteframe.png" alt=""></a>
+                <img src="img/blackwhiteframe.png" alt="">
                 <div class="buttons">
                     <p><b>¿INDECISO?</b></p>
                     <p><b>¿NO SABES QUÉ INSTRUMENTO APRENDER?</b></p>
-                <button class="buttonPianoVirtual">PRUEBA NUESTROS INSTRUMENTOS VIRTUALES</button>
+                <a href="#ourInstruments"><button class="buttonPianoVirtual">PRUEBA NUESTROS INSTRUMENTOS VIRTUALES</button></a>
                 </div>
             </div>
+            <div class="blackSpace">
+            </div>
         </section>
-      
-         <section id="lessonsDiv">
-
+        <section id="lessonsDiv">
+            <div class="cursosText">
             <h3 id="verticalText">Cursos</h3>
-
+            </div>
             <div id="lessonsList">
                 <a href="#piano"><h2>Piano</h2></a>
                 <a href="#guitarra"><h2>Guitarra</h2></a>
@@ -70,36 +69,42 @@
                 <a href="#teoria-musical"><h2>Teoría Musical</h2></a>
                 <a href="#cultura-musical"><h2>Cultura musical</h2></a>
             </div>
+            <div class="guitarGuy">
             <img src="img/guitarWhite.png" alt="">
-    </section>
-
-    <section id="ourInstruments">
-        <div>
-            <h2 id="upperH2">NUESTROS</h2>
-            <h2>INSTRUMENTOS</h2>
         </div>
-
+    </section>
+    <section id="ourInstruments">
+        <div class="h2Div">
+            <h2 id="upperH2">NUESTROS</h2>
+            <h2 id="lowerH2">INSTRUMENTOS</h2>
+        </div>
         <div class="sliderCards">
             <div class="instrumentsCards">
-                <img src="img/battery.jpg" alt="Piano Tiles">
-                <h3 class="cardText">Nuestra Bateria</h3>
+                <img src="img/vdrums.jpg" alt="Virtual drums">
+                <h3 class="cardText">Bateria Virtual</h3>
             </div>
             <div class="instrumentsCards">
-                <img src="img/piano.png" alt="Piano Tiles">
-                <h3 class="cardText">Nuestra Piano</h3>
+                <a href="./piano.html"><img src="img/vpiano.png" alt="Virtual Piano"></a>
+                <h3 class="cardText">Piano Virtual</h3>
             </div>
             <div class="instrumentsCards">
-                <img src="img/guitar.png" alt="Piano Tiles">
-                <h3 class="cardText">Nuestra Guitarra</h3>
+                <img src="img/vguitar.png" alt="Virtual Guitar">
+                <h3 class="cardText">Guitarra Virtual</h3>
             </div>
         </div>
-
+        <div class="signupForm">
+            <h2>¿Quieres más información sobre nuestra escuela?</h2>
+            
+            <input type="email" name="email" placeholder="Escribe aquí tu email" required>
+            <input type="submit" value="¡Quiero saber más!">
+            </form>
+        </div>
     </section>
     <footer>
         <section id="footerSect">
-
+        <div class="sponsors">
         <img id="footerImg" src="img/footerSponsors.png" alt="Footer Sponsors">
-        
+        </div>
         <div id="footerBar">
             <div id="footerIcons">
                 <a href=""><img class="iconsFooter" src="img/face.png" alt=""></a>
@@ -109,22 +114,20 @@
             </div>
             <div id="footerNav">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Escuela</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Instrumentos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#escuela">ESCUELA</a></li>
+                    <li><a href="#lessonsDiv">CURSOS</a></li>
+                    <li><a href="#ourInstruments">INSTRUMENTOS</a></li>
+                    <li><a href="#footerBer">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
         <hr>
         <div id="footerFinal">
             <img src="img/toquenLogoGrande.png" alt="">
-
             <h2>TOQUEN EL DOM</h2>
             <h2>AV. DEL BOGATELL, 82, SANT MARTÍ, BARCELONA</h2>
             <h2 id="phoneNumber">TELÉFONO: +34 620 548 756</h2>
-
         </div>
         </section>
     </footer>
