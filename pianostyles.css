@@ -1,0 +1,154 @@
+@font-face {
+  font-family: sfPro;
+  src: url(sources/sfPro.OTF);
+}
+
+* {
+  font-family: sfPro;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.logo {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pianoKeys {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(22, 22, 22);
+    width: 70vw;
+    padding: 60px 10px 10px 10px;
+    border-radius: 15px;
+  }
+  
+  .key {
+    border: 1px solid black;
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .White {
+    background-color: white;
+    width: 5vw;
+    height: 30vh;
+  }
+  
+  .Black {
+    background-color: black;
+    width: 3vw;
+    height: 18vh;
+    margin-left: -1.5vw;
+    margin-right: -1.5vw;
+    z-index: 1;
+    box-shadow: 0px 4px rgba(68, 68, 68, 0.808);
+  }
+
+  .Black:active, .Black.clicked {
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.808);
+  } 
+
+  .White:active, .White.clicked {
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.808);
+  } 
+
+  .key span {
+    color: grey;
+    font-weight: bold;
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .left p{
+    margin-bottom: 2px;
+    margin-top: -2vh;
+  } 
+
+  .right p{
+    margin-bottom: 2px;
+    margin-top: -2vh;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .key.pressed {
+    /* Estilos para cuando la tecla está pulsada */
+    /* Por ejemplo, puedes cambiar el color de fondo o aplicar una sombra */
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.808);
+  }
+  
+  .key:active {
+    /* Estilos para cuando la tecla está activa */
+    /* Por ejemplo, puedes cambiar el color de fondo o aplicar una sombra */
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.808);
+  }
+  *{
+    user-select: none;
+  }
+  #hideButton{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -5vh;
+            margin-top: -10vh;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 13px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #960303;
+  }
+  .button1:hover {
+    background-color: #960303;
+    color: white;
+  }
+ 
+  .arrows{
+    margin-top: 2vh;
+    width: auto;
+    height: auto;
+
+  }
+  .arrows:hover{
+    filter: invert(.3);
+  }
