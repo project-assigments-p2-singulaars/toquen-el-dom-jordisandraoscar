@@ -14,7 +14,7 @@ body {
 .logo {
   display: block;
   margin-top: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,7 +22,7 @@ body {
 #pianoKeys {
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 4vh;
     margin-bottom: 8vh;
     margin-left: auto;
     margin-right: auto;
@@ -77,7 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -145,7 +145,7 @@ body {
  
   .arrows{
     margin-top: 2vh;
-    width: auto;
+    width: 3vw;
     height: auto;
 
   }
