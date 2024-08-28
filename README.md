@@ -20,4 +20,4 @@ No es necesario instalar nada para ver el proyecto en funcionamiento. Solo neces
 https://github.com/project-assigments-p2-singulaars/toquen-el-dom-jordisandraoscar.git
 
 <h1>Contacto</h1>
-Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con <a href="https://www.linkedin.com/in/oscar-herencia-sakkis-996aa12bb">Óscar</a>, <a href="https://www.linkedin.com/">Jordi</a> o <a href="https://www.linkedin.com/in/sandraramirezpuente/">Sandra</a>.
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con <a href="https://www.linkedin.com/in/oscar-herencia-sakkis-996aa12bb">Óscar</a>, <a href="https://www.linkedin.com/in/jordirh/">Jordi</a> o <a href="https://www.linkedin.com/in/sandraramirezpuente/">Sandra</a>.
